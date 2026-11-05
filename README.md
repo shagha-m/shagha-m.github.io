@@ -1,6 +1,6 @@
 # Shaghayegh Mastalipour — Bilingual Portfolio
 
-A redesigned, responsive English/Persian portfolio with **local case-study pages** and two one-page PDF summaries. Project cards and primary writing links go to pages inside the portfolio, so the work remains browsable when outside publishers are slow. The site requires no build step, npm packages, external fonts, or remote images. The four editorial visuals are AI-generated and stored locally as optimized WebP images (approximately 173 KB total). It can be hosted on GitHub Pages, Vercel, or Netlify.
+A redesigned, responsive English/Persian portfolio with **local case-study pages** and two one-page PDF summaries. Project cards and primary writing links go to pages inside the portfolio, so the work remains browsable when outside publishers are slow. The site requires no build step, npm packages, external fonts, or remote images. Four editorial visuals are AI-generated. The case studies also include cropped screenshots of the user’s own Search Console data, Homat Academy workflows, and public author pages, saved locally as optimized WebP images. Screenshot crops remove browser chrome and private admin URLs. It can be hosted on GitHub Pages, Vercel, or Netlify.
 
 ## Preview
 
@@ -15,7 +15,7 @@ Upload the **contents** of this directory to the repository root (`index.html`, 
 - Confirm the preferred Roman spelling of the name and contact email.
 - The hero and project images are illustrative AI-generated visuals; project descriptions and public links document the work.
 - Review the displayed SEO metrics and dates against your GSC exports. The site **does not claim** that SEO changes alone caused the traffic difference.
-- Confirm that the 475 items and 29 checks in the automation case study remain accurate as described in the project notes.
+- The automation case study distinguishes the earlier documentation (475 prepared items and 29 checks) from a later dashboard capture (516 content-bank items, four channels active).
 - The author profile links point to published work. The Korean embassy general notices link was deliberately omitted because it does not identify an individual byline.
 - This ZIP is ready to host as-is. Edit the HTML/CSS directly for copy and styling changes. The PDFs are static downloads; replace them if your experience or contact details change.
-- Add the final live domain to canonical/hreflang tags **only after** the repository/URL is chosen. No guessed URL is hard-coded into the project.
+- Canonical and hreflang tags use the published GitHub Pages URL `https://shagha-m.github.io/`. Change them if the site moves to another domain.
