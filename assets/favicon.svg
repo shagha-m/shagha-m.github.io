@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="SM">
+  <rect width="64" height="64" rx="12" fill="#741F3A"/>
+  <rect x="0" y="56" width="22" height="8" fill="#741F3A"/>
+  <rect x="22" y="58" width="21" height="6" fill="#1B5E66"/>
+  <rect x="43" y="58" width="21" height="6" fill="#C68B2C"/>
+  <text x="11" y="41" fill="#F6F0E4" font-family="Georgia, 'Times New Roman', serif" font-size="27" font-weight="700" letter-spacing="-1">SM</text>
+  <circle cx="53" cy="39" r="3.6" fill="#D89E3C"/>
+</svg>

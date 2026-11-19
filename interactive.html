@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#741F3A">
+  <meta name="description" content="Case study: Project Lantern (working title) — 2D indie game pre-production dossier for Godot 4 (PC & Steam Deck), covering narrative design, GDD, systemic coupling, director’s shot cards, and two-person scope governance.">
+  <title>Dossier 04 · Project Lantern (Working Title) — Shaghayegh Mastalipour</title>
+  <link rel="canonical" href="https://shagha-m.github.io/interactive.html">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&amp;family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;1,6..72,500;1,6..72,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <script>
+    (function(){try{var m=localStorage.getItem('sm_portfolio_theme')||'light';var d=m==='system'?(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'):m;document.documentElement.setAttribute('data-theme',d);document.documentElement.setAttribute('data-theme-mode',m);}catch(e){}})();
+  </script>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="ribbon" aria-hidden="true"><span></span><span></span><span></span></div>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">SM<span class="brand-dot">.</span></span>
+        <span class="brand-name">Shaghayegh Mastalipour</span>
+      </a>
+      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+        <a href="index.html#focus">Research Focus</a>
+        <a href="index.html#work" aria-current="page">Case Studies</a>
+        <a href="index.html#bibliography">Publishing</a>
+        <a href="index.html#timeline">Background</a>
+        <a href="cv.html">CV</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <div class="header-controls">
+        <div class="theme-switch" role="group" aria-label="Color theme">
+          <button class="theme-btn" type="button" data-set-theme="light" aria-pressed="true" aria-label="Light theme"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg></button>
+          <button class="theme-btn" type="button" data-set-theme="dark" aria-pressed="false" aria-label="Dark theme"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
+          <button class="theme-btn" type="button" data-set-theme="system" aria-pressed="false" aria-label="System theme"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></button>
+        </div>
+        <button class="menu-btn" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Toggle navigation menu"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="case-hero">
+      <div class="wrap">
+        <a class="back-link" href="index.html#work">← Back to all dossiers</a>
+        <p class="eyebrow burgundy">Dossier 04 · Interactive Media Pre-Production &amp; Scope Governance</p>
+        <h1><em>Project Lantern</em> (working title): governing mythic ambition through scope.</h1>
+        <p class="case-hero-lead">
+          A two-person 2D indie game pre-production package targeting <strong>Godot Engine 4 (PC &amp; Steam Deck)</strong>—pairing a Promethean dark-fantasy premise and 16-bit noir visual direction with a standard GDD, Director’s Shot Cards, Mathematical Systemic Coupling, Engineering Justification, and Scope Management.
+        </p>
+
+        <dl class="spec-bar">
+          <div class="spec-item">
+            <dt>Working Title &amp; Target</dt>
+            <dd>Project Lantern · Godot 4 (2D PC / Steam Deck)</dd>
+          </div>
+          <div class="spec-item">
+            <dt>Two-Person Team</dt>
+            <dd>Narrative, Systems &amp; Direction + Pixel Artist</dd>
+          </div>
+          <div class="spec-item">
+            <dt>Stage</dt>
+            <dd>Pre-Production Complete → Greybox Ready</dd>
+          </div>
+          <div class="spec-item">
+            <dt>Dossier Access</dt>
+            <dd>Full GDD &amp; Scope Suite on Request</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap detail-layout">
+        <aside class="detail-aside">
+          <h3>Academic Review</h3>
+          <ul class="aside-links">
+            <li><a href="mailto:sh.mastalipour@gmail.com?subject=Academic%20Request%3A%20Project%20Lantern%20GDD%20%26%20Scope%20Dossier">Request Full GDD Suite ↗</a></li>
+            <li><a href="frankenstein-essay.html">Related: Promethean Essay →</a></li>
+          </ul>
+          <p class="aside-note">
+            <strong>IP &amp; attribution note:</strong> <em>Project Lantern</em> (also tracked internally as <em>Lantern Home</em>) is a working title for an original two-person production developed with my brother (pixel art direction). Narrative endings and full equations are withheld publicly and shared upon request with admissions committees.
+          </p>
+        </aside>
+
+        <div class="detail-body">
+          <div class="detail-section">
+            <span class="step-num">01 — Premise &amp; Structural Irony</span>
+            <h2>A giant chasing the sun, a hut snagged on his chain</h2>
+            <p>
+              A prideful War God descends to reclaim humanity’s primordial fire. Blinded by hubris, he assumes something so precious must be colossal—so he races eastward staring only at the horizon to seize the rising sun, crushing valley hearths into ash beneath his stride. High on a barren ridge sits a lowly thief’s wooden shack keeping the last undying ember; because the hilltop stands level with the giant’s rusted armor chains, a swinging link accidentally hooks the roof and tears the cottage loose like a dangling lantern.
+            </p>
+            <p>
+              Gameplay unfolds as a symmetrical <strong>two-phase run</strong>: an upward <em>Ascent</em> through branching ruins (balancing resource gathering, tool durability, and survivor rescues) pivoting at the hanging cottage into a high-velocity downward <em>Retribution</em>, where earlier choices between solidarity and greed directly reshape which escape paths stand open.
+            </p>
+          </div>
+
+          <div class="detail-section">
+            <span class="step-num">02 — Coupled Systems &amp; Production Governance</span>
+            <h2>Designing mechanics that constrain scope while deepening tension</h2>
+            <p>
+              Small-team interactive media fails when ambitious lore outgrows production capacity. Instead of multiplying disconnected features, the pre-production package ties a compact set of 2D systems together through explicit rules and cost boundaries:
+            </p>
+            <div class="module-grid">
+              <div class="module-card">
+                <h3>1. Spatial Inventory &amp; Active Burden Rule</h3>
+                <p>An expandable 4×4 rotatable grid coupled directly to movement physics, chain-climbing thresholds, and emergency mouse-drag discard (<em>Panic Jettison</em>). Relics grant hazard resistance only while carried as live backpack weight—never from safe camp storage.</p>
+              </div>
+              <div class="module-card">
+                <h3>2. Three-Second Deduction &amp; Camp Risk</h3>
+                <p>Shattered prisons mix innocent villagers with disguised pickpockets and saboteurs. Players read subtle visual cues before spending crowbar durability to rescue; misjudgments carry lasting camp consequences, such as losing gear-repair support or stored gold.</p>
+              </div>
+              <div class="module-card">
+                <h3>3. Director’s Shot Cards &amp; Diegetic Audio</h3>
+                <p>Standardized scene cards specify 45° high-angle camera framing, three-plane silhouette staging, frame-by-frame beat timing, a high-contrast 16-bit noir palette (charcoal, bone, crimson, and a single warm lantern glow), and diegetic sound shifts—giving writer and pixel artist a frictionless handoff.</p>
+              </div>
+              <div class="module-card">
+                <h3>4. Scope Management, Coupling &amp; Feasibility</h3>
+                <p>Companion documentation models quantitative systemic coupling across weight, stamina, tool wear, and camp economy, alongside engineering justification and scope cut-lines calibrated to a two-person Godot 4 production entering greybox prototyping.</p>
+              </div>
+            </div>
+
+            <div class="diagram-frame" role="img" aria-label="Pre-production pipeline linking Director Shot Cards, Standard GDD, Systemic Coupling, and Scope and Engineering Justification for Godot 4 greyboxing">
+              <svg viewBox="0 0 760 126" width="100%" height="auto" xmlns="http://www.w3.org/2000/svg">
+                <g font-family="Plus Jakarta Sans, system-ui, sans-serif">
+                  <rect x="8" y="18" width="170" height="90" rx="6" fill="none" stroke="var(--burgundy)" stroke-width="1.6"/>
+                  <text x="22" y="42" font-size="10" font-family="monospace" fill="var(--burgundy)" font-weight="600">DIRECTION</text>
+                  <text x="22" y="64" font-size="13" fill="var(--ink)" font-weight="700">Shot Cards &amp; Tone</text>
+                  <text x="22" y="84" font-size="11" fill="var(--ink-muted)">45° noir · Diegetic sound</text>
+
+                  <path d="M182 63 H200" stroke="var(--teal)" stroke-width="1.6"/>
+
+                  <rect x="204" y="18" width="166" height="90" rx="6" fill="none" stroke="var(--teal)" stroke-width="1.6"/>
+                  <text x="218" y="42" font-size="10" font-family="monospace" fill="var(--teal)" font-weight="600">SPECIFICATION</text>
+                  <text x="218" y="64" font-size="13" fill="var(--ink)" font-weight="700">Two-Phase GDD</text>
+                  <text x="218" y="84" font-size="11" fill="var(--ink-muted)">Grid · Toolkit · Deduction</text>
+
+                  <path d="M374 63 H392" stroke="var(--ochre)" stroke-width="1.6"/>
+
+                  <rect x="396" y="18" width="172" height="90" rx="6" fill="none" stroke="var(--ochre)" stroke-width="1.6"/>
+                  <text x="410" y="42" font-size="10" font-family="monospace" fill="var(--ochre)" font-weight="600">MODELING</text>
+                  <text x="410" y="64" font-size="13" fill="var(--ink)" font-weight="700">Systemic Coupling</text>
+                  <text x="410" y="84" font-size="11" fill="var(--ink-muted)">Weight · Relics · Camp risk</text>
+
+                  <path d="M572 63 H590" stroke="var(--burgundy)" stroke-width="1.6"/>
+
+                  <rect x="594" y="18" width="158" height="90" rx="6" fill="none" stroke="var(--burgundy)" stroke-width="1.6"/>
+                  <text x="608" y="42" font-size="10" font-family="monospace" fill="var(--burgundy)" font-weight="600">GOVERNANCE</text>
+                  <text x="608" y="64" font-size="13" fill="var(--ink)" font-weight="700">Godot 4 Scope</text>
+                  <text x="608" y="84" font-size="11" fill="var(--ink-muted)">2-person greybox plan</text>
+                </g>
+              </svg>
+              <div class="diagram-caption">Fig. 1 — Pre-production governance connecting creative staging, systemic trade-offs, and realistic two-person scope.</div>
+            </div>
+          </div>
+
+          <div class="detail-section">
+            <span class="step-num">03 — Visual Direction Artifact: Scene 01 (“The Snag”)</span>
+            <h2>Translating a written Director’s Shot Card into visual staging</h2>
+            <p>
+              To test cross-discipline communication before asset production, Scene 01 was written as a structured shot card establishing a two-tier 45° high-angle composition: darkened valley dwellings below, jagged silhouette rock in the foreground, the thief’s isolated ridge hut holding the frame’s sole warm golden window on the right third, and a massive rusted armor chain cutting in from the upper left as ambient night sounds drop to sudden silence.
+            </p>
+
+            <div class="plates-grid" style="max-width:520px">
+              <figure class="plate">
+                <button class="plate-btn" type="button" data-caption="Project Lantern (working title) — Pre-production visual direction storyboard for Scene 01 ('The Snag'): 45° high-angle 16-bit noir palette testing contrast between the darkened valley, crimson dusk, rusted chain, and lone warm hearth window.">
+                  <img src="assets/proof-lantern-storyboard.webp" alt="16-bit noir pixel-art style concept frame for Scene 01 of Project Lantern showing a giant rusted chain snagging a small wooden hut with a glowing yellow window atop a rocky ridge above a dark village" loading="lazy">
+                </button>
+                <figcaption>
+                  <span class="plate-id">Plate 01 · Scene 01 Pre-Production Concept Frame</span>
+                  45° high-angle 16-bit noir storyboard study for <em>The Snag</em>, illustrating palette hierarchy (charcoal, crimson sky, and single golden lantern focal point) generated from the written Director’s Shot Card prior to Godot 4 greyboxing.
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <nav class="wrap case-pager" aria-label="Case study navigation">
+      <a class="pager-link" href="writing.html">
+        <span>← Previous Dossier</span>
+        <strong>03 · Books, Criticism &amp; Cultural Press</strong>
+      </a>
+      <a class="pager-link" href="drm.html" style="text-align:right">
+        <span>Next Dossier →</span>
+        <strong>05 · Proprietary Course &amp; Book DRM</strong>
+      </a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <span>© 2026 Shaghayegh Mastalipour</span>
+      <a href="mailto:sh.mastalipour@gmail.com">sh.mastalipour@gmail.com</a>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image preview" hidden>
+    <div class="lightbox-inner">
+      <img id="lightbox-img" src="" alt="">
+      <div class="lightbox-bar">
+        <span id="lightbox-caption"></span>
+        <button class="lightbox-close" id="lightbox-close" type="button">Close [Esc]</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
