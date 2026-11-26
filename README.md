@@ -6,7 +6,6 @@ Academic and professional portfolio hosted at **[shagha-m.github.io](https://sha
 
 A static, responsive, Swiss-modern archival portfolio presenting documented work across:
 
-- **Editorial Operations & Publishing Workflows** — [`automation.html`](automation.html) (multi-channel language-community scheduler, linked to [`shagha-m/homat-bot`](https://github.com/shagha-m/homat-bot))
 - **Platform Governance & Organic Search Growth** — [`seo.html`](seo.html) (Homat Academy co-founded learning venture & Search Console records)
 - **Book Publishing, Literary Criticism & Cultural Press** — [`writing.html`](writing.html) (published book translation *Stitch* by Pádraig Kenny at Char Books / Milkan, contracted book editing, *Four Seasons* magazine & Korea.net Honorary Reporter, Rahbal Aseman, Taaghche, Vinesh, and Avangard)
 - **Featured English Writing Sample** — [`frankenstein-essay.html`](frankenstein-essay.html) (*The Doctor Punished by History: Reading Frankenstein Today* — 11-section critical essay on Mary Shelley’s *Frankenstein*)
