@@ -12,6 +12,7 @@ A static, responsive, Swiss-modern archival portfolio presenting documented work
 - **Interactive Media Design & Scope Governance** — [`interactive.html`](interactive.html) (*Project Lantern*, working title — Godot 4 2D pre-production GDD, Director’s Shot Cards, systemic coupling, engineering justification, and scope governance)
 - **Digital Rights Management (DRM) & B2B Roadmap** — [`drm.html`](drm.html) (closed-source proprietary course, e-book, and flashcard rights protection on Homat Academy; live B2C to planned B2B licensing)
 - **Homat Unified Android App** — [`app.html`](app.html) (v2.0 Persian RTL mobile product unifying the protected course/e-book/flashcard library with in-app shop, native blog, messaging and zero-loss learner migration; schematic UI plates because the client blocks screen capture by design)
+- **HoSub Studio** — [`hosub.html`](hosub.html) (public MIT v2.0 offline multilingual subtitle & flashcard studio for code-switching lesson videos; github.com/shagha-m/hosub-studio)
 - **Learner Workflows & Multilingual Curriculum Media** — [`development.html`](development.html) (Tutor LMS / WooCommerce product workflows, plus single-frame sample plates from dual-edition English CEFR and bilingual Hangul–Persian Korean 3B slide suites)
 - **Printable Academic CV** — [`cv.html`](cv.html) (formatted for screen and A4 PDF export)
 
