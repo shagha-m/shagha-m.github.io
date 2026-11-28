@@ -16,6 +16,7 @@
   </script>
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
+  <style>html[lang="fa"] body, html[lang="fa"] h1, html[lang="fa"] h2, html[lang="fa"] h3, html[lang="fa"] p, html[lang="fa"] li, html[lang="fa"] a, html[lang="fa"] button, html[lang="fa"] dd, html[lang="fa"] dt, html[lang="fa"] td, html[lang="fa"] th { font-family: 'Vazirmatn', Tahoma, system-ui, sans-serif !important; letter-spacing: 0 !important; }</style>
 </head>
 <body>
   <div class="ribbon" aria-hidden="true"><span></span><span></span><span></span></div>
@@ -36,6 +37,7 @@
         <a href="index.html#contact">Contact</a>
       </nav>
       <div class="header-controls">
+        <a class="lang-btn" href="fa/drm.html" aria-label="نسخه‌ی فارسی">فارسی</a>
         <div class="theme-switch" role="group" aria-label="Color theme">
           <button class="theme-btn" type="button" data-set-theme="light" aria-pressed="true" aria-label="Light theme"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg></button>
           <button class="theme-btn" type="button" data-set-theme="dark" aria-pressed="false" aria-label="Dark theme"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
@@ -63,7 +65,7 @@
           </div>
           <div class="spec-item">
             <dt>Live B2C Record</dt>
-            <dd>36 Issued Licenses · 18 Active Devices · 5 Courses</dd>
+            <dd>49 Entitlements · 22 Registered Devices · 6 Products</dd>
           </div>
           <div class="spec-item">
             <dt>Business Model</dt>
@@ -103,10 +105,10 @@
           </div>
 
           <div class="detail-section">
-            <span class="step-num">02 — Why We Built Our Own: Piracy &amp; Vendor Failure</span>
+            <span class="step-num">02 — Why We Built Our Own: Content-Rights Infringement &amp; Third-Party Vendor Risk</span>
             <h2>Two lessons that ended our reliance on third-party DRM</h2>
             <p>
-              The decision to build a proprietary suite was forced by experience, not preference. On one side, pirate Telegram channels were openly reselling online and offline courses without permission, and watching other academies lose catalogues to that trade made the cost of weak protection concrete. On the other, the third-party DRM player we had licensed — on a supposedly lifetime licence — repeatedly broke our site with <strong>unannounced updates</strong>: we would learn an update had shipped only when students reported losing access. Support tickets went unanswered, and when we reached the vendor by phone, we were asked for substantial new payments despite the lifetime licence.
+              The decision to build a proprietary suite was forced by experience, not preference. First, our course content was being redistributed and resold without authorization, so months of instructional production circulated with no return — a direct threat to the economics of the whole catalogue. Second, the third-party DRM player we had licensed — on a supposedly lifetime licence — repeatedly disrupted learner access with <strong>unannounced updates</strong>: we would learn an update had shipped only when students reported losing access. Support tickets went unanswered, and when we reached the vendor by phone, we were asked for substantial new payments despite the lifetime licence.
             </p>
             <p>
               I therefore specified an in-house suite around an explicit architectural tension: <strong>the least possible dependence on the internet, the strongest practical protection, and the easiest possible learner experience — at the same time</strong>. Every later decision in this dossier, from offline playback to graduated enforcement, is a negotiation between those three poles.
@@ -126,7 +128,7 @@
               </div>
               <div class="module-card">
                 <h3>2. WooCommerce License Server &amp; Learner CRM</h3>
-                <p>WordPress/WooCommerce management plugin automating entitlement issuance at checkout, enforcing per-course device-binding policies across desktop and mobile slots, and giving administrators an audit log and learner support CRM.</p>
+                <p>WordPress/WooCommerce management plugin automating entitlement issuance at checkout, enforcing per-course device limits across desktop and mobile devices, and giving administrators an audit log and learner support CRM.</p>
               </div>
               <div class="module-card">
                 <h3>3. Protected Windows &amp; Android Players</h3>
@@ -178,12 +180,12 @@
 
           <div class="detail-section">
             <span class="step-num">04 — Live Governance, Graduated Enforcement &amp; B2B Roadmap</span>
-            <h2>Policy in practice across 36 issued licenses</h2>
+            <h2>Policy in practice on the live Homat Suite</h2>
             <p>
-              As captured on <strong>19 November 2026</strong>, the live Homat DRM &amp; CRM console governs <strong>36 issued course licenses</strong> and <strong>18 active hardware-bound devices (HWID)</strong> across <strong>5 protected courses</strong> (supporting an academy catalog of <strong>197 lessons</strong>, <strong>47 registered students</strong>, and <strong>64 course enrollments</strong>).
+              On the live Homat Suite dashboard (v0.9.45), the system governs <strong>49 issued entitlements</strong> and <strong>22 registered hardware-bound devices (HWID)</strong> across <strong>6 protected products</strong> (supporting an academy catalog of <strong>197 lessons</strong>, <strong>49 registered students</strong>, and <strong>67 course enrollments</strong>).
             </p>
             <p>
-              Effective rights management is as much an editorial and policy discipline as a technical one. Rather than relying on hair-trigger automated bans that punish accidental user behavior, I enforce a <strong>graduated enforcement policy</strong> backed by anti-capture audit logs: for instance, when telemetry recorded a video screen-capture attempt on an active account, a formal first-offense warning was issued explaining platform terms; when the audit log later captured two subsequent attempts to record course audio on the same account, the associated course licenses were formally revoked in accordance with Homat Academy’s published policy.
+              Effective rights management is as much an editorial and policy discipline as a technical one. Rather than relying on hair-trigger automated bans that punish accidental user behavior, I enforce a <strong>graduated, learner-facing policy</strong> — warning and explanation first, revocation only on repetition — backed by anti-capture audit logs: for instance, when telemetry recorded a video screen-capture attempt on an active account, a formal first-offense warning was issued explaining platform terms; when the audit log later captured two subsequent attempts to record course audio on the same account, the associated course licenses were formally revoked in accordance with Homat Academy’s published policy.
             </p>
             <p>
               Running this full governance cycle inside Homat Academy serves as a real-world B2C proving ground across Windows and Android. The next phase evolves both the video-course DRM suite and the companion e-book and flashcard DRM into a commercial B2B offering for language institutes and independent instructors.
@@ -191,12 +193,21 @@
 
             <div class="plates-grid">
               <figure class="plate">
-                <button class="plate-btn" type="button" data-caption="Homat DRM & CRM WordPress console (19 Nov 2026): 36 issued licenses, 18 active hardware-bound devices (HWID), and 5 protected courses. Student table omitted for privacy.">
-                  <img src="assets/proof-drm-dashboard.webp" alt="Homat DRM and CRM admin dashboard displaying 36 issued licenses, 18 active hardware-bound devices, and 5 protected courses" loading="lazy">
+                <button class="plate-btn" type="button" data-caption="Homat Suite dashboard (v0.9.45): 6 products, 49 entitlements, 22 registered devices, 17 content lockers. Learner identities cropped for privacy.">
+                  <img src="assets/proof-drm-dashboard.webp" alt="Homat Suite 0.9.45 dashboard showing 6 products, 49 entitlements, 22 registered devices and 17 content lockers" loading="lazy">
                 </button>
                 <figcaption>
-                  <span class="plate-id">Plate 01 · Live DRM &amp; CRM Console (19 Nov 2026)</span>
-                  Sanitized administrative header showing 36 issued licenses, 18 active hardware-bound devices, and 5 protected courses (learner directory and admin URLs cropped out for privacy). In-app player screens are not shown because Windows and Android clients block screen capture by design.
+                  <span class="plate-id">Plate 01 · Homat Suite Dashboard (v0.9.45)</span>
+                  Live suite dashboard showing 6 products, 49 entitlements, 22 registered devices and 17 content lockers (browser chrome, admin URLs and learner identities cropped out for privacy). In-app player screens are not shown because Windows and Android clients block screen capture by design.
+                </figcaption>
+              </figure>
+              <figure class="plate">
+                <button class="plate-btn" type="button" data-caption="Homat Suite alerts and security log: 14 screen-capture attempts, 4 tamper/crack events, 2 involved accounts, 149 total logged events. Account identities cropped for privacy.">
+                  <img src="assets/proof-drm-alerts.webp" alt="Homat Suite alerts and security log: 14 capture attempts, 4 tamper events and 149 total events" loading="lazy">
+                </button>
+                <figcaption>
+                  <span class="plate-id">Plate 02 · Alerts &amp; Security Log</span>
+                  Graduated-enforcement telemetry in practice: 14 screen-capture attempts, 4 tamper/crack events and 2 involved accounts over 30 days (149 logged events in total). Account identities are cropped out; enforcement follows the published warning-then-revocation policy described above.
                 </figcaption>
               </figure>
             </div>

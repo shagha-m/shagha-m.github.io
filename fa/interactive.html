@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<html data-theme="light" dir="rtl" lang="fa">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#741F3A" name="theme-color"/>
+<meta content="Case study: Project Lantern (working title) — 2D indie game pre-production dossier for Godot 4 (PC &amp; Steam Deck), covering narrative design, GDD, systemic coupling, director’s shot cards, and two-person scope governance." name="description"/>
+<title>پرونده‌ی ۰۳ · Project Lantern (عنوان موقت) — شقایق مستعلی‌پور</title>
+<link href="https://shagha-m.github.io/fa/interactive.html" rel="canonical"/>
+<link href="../assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&amp;family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;1,6..72,500;1,6..72,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<script>
+    (function(){try{var m=localStorage.getItem('sm_portfolio_theme')||'light';var d=m==='system'?(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'):m;document.documentElement.setAttribute('data-theme',d);document.documentElement.setAttribute('data-theme-mode',m);}catch(e){}})();
+  </script>
+<link href="../styles.css" rel="stylesheet"/>
+<script defer="" src="../script.js"></script>
+<style>html[lang="fa"] body, html[lang="fa"] h1, html[lang="fa"] h2, html[lang="fa"] h3, html[lang="fa"] p, html[lang="fa"] li, html[lang="fa"] a, html[lang="fa"] button, html[lang="fa"] dd, html[lang="fa"] dt, html[lang="fa"] td, html[lang="fa"] th { font-family: 'Vazirmatn', Tahoma, system-ui, sans-serif !important; letter-spacing: 0 !important; }</style>
+<style>body,h1,h2,h3,h4,p,li,a,button,dd,dt,td,th,span,div{font-family:'Vazirmatn',Tahoma,system-ui,sans-serif!important;letter-spacing:0!important}</style><link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/></head>
+<body>
+<div aria-hidden="true" class="ribbon"><span></span><span></span><span></span></div>
+<a class="skip-link" href="#main">رفتن به محتوای اصلی</a>
+<header class="site-header">
+<div class="wrap header-inner">
+<a class="brand" href="index.html">
+<span class="brand-mark">SM<span class="brand-dot">.</span></span>
+<span class="brand-name">شقایق مستعلی‌پور</span>
+</a>
+<nav aria-label="Primary navigation" class="site-nav" id="site-nav">
+<a href="index.html#focus">تمرکز پژوهشی</a>
+<a aria-current="page" href="index.html#work">پرونده‌های کاری</a>
+<a href="index.html#bibliography">نشر و کتاب</a>
+<a href="index.html#timeline">سوابق</a>
+<a href="cv.html">رزومه</a>
+<a href="index.html#contact">تماس</a>
+</nav>
+<div class="header-controls">
+<a aria-label="Switch to English" class="lang-btn" href="../interactive.html">EN</a><div aria-label="Color theme" class="theme-switch" role="group">
+<button aria-label="Light theme" aria-pressed="true" class="theme-btn" data-set-theme="light" type="button"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path></svg></button>
+<button aria-label="Dark theme" aria-pressed="false" class="theme-btn" data-set-theme="dark" type="button"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg></button>
+<button aria-label="System theme" aria-pressed="false" class="theme-btn" data-set-theme="system" type="button"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><rect height="14" rx="2" width="20" x="2" y="3"></rect><path d="M8 21h8M12 17v4"></path></svg></button>
+</div>
+<button aria-controls="site-nav" aria-expanded="false" aria-label="Toggle navigation menu" class="menu-btn" type="button"><svg fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 24 24" width="18"><path d="M4 7h16M4 12h16M4 17h16"></path></svg></button>
+</div>
+</div>
+</header>
+<main id="main">
+<section class="case-hero">
+<div class="wrap">
+<a class="back-link" href="index.html#work">← بازگشت به همه‌ی پرونده‌ها</a>
+<p class="eyebrow burgundy">پرونده‌ی ۰۳ · پیش‌تولید رسانه‌ی تعاملی و مدیریت دامنه</p>
+<h1><em>Project Lantern</em> (عنوان موقت): مهار جاه‌طلبی اسطوره‌ای با مدیریت دامنه.</h1>
+<p class="case-hero-lead">
+          بسته‌ی پیش‌تولید یک بازی مستقل دوبعدی دونفره برای <strong>موتور Godot 4 (رایانه و Steam Deck)</strong>— با پیش‌فرض فانتزی تاریکِ پرومته‌ای و کارگردانی بصری نوآر ۱۶بیتی، در کنار سند طراحی استاندارد (GDD)، کارت‌های شات کارگردان، پیوستگی میان نظام‌ها و مدل ریاضی، توجیه مهندسی و مدیریت دامنه (Scope Management).
+        </p>
+<dl class="spec-bar">
+<div class="spec-item">
+<dt>عنوان موقت و هدف</dt>
+<dd>Project Lantern · ‏Godot 4 (دوبعدی، رایانه / Steam Deck)</dd>
+</div>
+<div class="spec-item">
+<dt>تیم دونفره</dt>
+<dd>کارگردانی بازی، روایت و نظام‌ها (من) + اجرای پیکسل‌آرت (هم‌سازنده)</dd>
+</div>
+<div class="spec-item">
+<dt>مرحله</dt>
+<dd>پیش‌تولید کامل ← آماده‌ی نمونه‌ی اولیه‌ی بدون گرافیک نهایی (Greybox)</dd>
+</div>
+<div class="spec-item">
+<dt>دسترسی به پرونده</dt>
+<dd>سند طراحی کامل و مجموعه‌ی مدیریت دامنه بنا بر درخواست</dd>
+</div>
+</dl>
+</div>
+</section>
+<section class="section">
+<div class="wrap detail-layout">
+<aside class="detail-aside">
+<h3>بررسی دانشگاهی</h3>
+<ul class="aside-links">
+<li><a href="mailto:sh.mastalipour@gmail.com?subject=Academic%20Request%3A%20Project%20Lantern%20GDD%20%26%20Scope%20Dossier">درخواست مجموعه‌ی کامل سند طراحی ↗</a></li>
+<li><a href="../frankenstein-essay.html">مرتبط: مقاله‌ی پرومته‌ای ←</a></li>
+</ul>
+<p class="aside-note">
+<strong>یادداشت مالکیت فکری و انتساب:</strong> <em>Project Lantern</em> (که در داخل پروژه <em>Lantern Home</em>هم نامیده می‌شود) عنوان موقت یک تولید اصیل دونفره است که با برادرم می‌سازم (کارگردانی بازی با من است؛ اجرای پیکسل‌آرت با اوست). پایان‌بندی‌های روایت و معادله‌های کامل عمومی نیستند و بنا بر درخواست با کمیته‌های پذیرش به اشتراک گذاشته می‌شوند.
+          </p>
+</aside>
+<div class="detail-body">
+<div class="detail-section">
+<span class="step-num">۰۱ — پیش‌فرض و کنایه‌ی ساختاری</span>
+<h2>غولی در تعقیب خورشید، کلبه‌ای گیرکرده به زنجیرش</h2>
+<p>
+              خدای جنگ مغروری فرود می‌آید تا آتش نخستین انسان‌ها را پس بگیرد. از روی غرور تصور می‌کند چیزی به این ارزشمندی حتماً باید بسیار بزرگ باشد؛ پس به سوی شرق می‌تازد و چشم از افق برنمی‌دارد تا خورشیدِ در حال طلوع را تصاحب کند و خانه‌های دره را زیر گام‌هایش ویران می‌کند. روی یک بلندی خشک، کلبه‌ی چوبی یک دزد آخرین شعله‌ی باقی‌مانده را نگه داشته است. چون کلبه هم‌سطح زنجیرهای زنگ‌زده‌ی زره‌ی غول قرار دارد، یکی از حلقه‌های زنجیر هنگام حرکت به سقف گیر می‌کند و کلبه را از جا می‌کند؛ کلبه از زنجیر آویزان می‌ماند، مثل یک فانوس.</p>
+<p>در بازی، بازیکن در محیطی ویران‌شده پیش می‌رود، منابع گرد می‌آورد، دوام ابزارش را مدیریت می‌کند و درباره‌ی نجات بازماندگان تصمیم می‌گیرد. این تصمیم‌ها فقط در همان لحظه اثر ندارند؛ پیامدشان در ادامه‌ی مسیر هم دیده می‌شود.</p>
+</div>
+<div class="detail-section">
+<span class="step-num">۰۲ — نظام‌های پیوسته و مدیریت تولید</span>
+<h2>طراحی مکانیک‌هایی که دامنه را مهار و تنش را عمیق می‌کنند</h2>
+<p>
+              رسانه‌ی تعاملی تیم‌های کوچک وقتی شکست می‌خورد که جهان‌سازی جاه‌طلبانه از ظرفیت تولید بزرگ‌تر شود. این بسته‌ی پیش‌تولید، به‌جای انباشتن قابلیت‌های جدا از هم، مجموعه‌ای فشرده از نظام‌های دوبعدی را با قانون‌ها و مرزهای هزینه‌ی صریح به هم گره می‌زند:
+            </p>
+<div class="module-grid">
+<div class="module-card">
+<h3>۱. موجودی فضایی و قانون بار فعال</h3>
+<p>بازیکن وسایلش را در شبکه‌ای ۴×۴ می‌چیند؛ هرچه کوله سنگین‌تر باشد، حرکت و بالا رفتن سخت‌تر می‌شود. در موقعیت خطر، بازیکن می‌تواند آیتمی را با ماوس بیرون بکشد و رها کند تا فوری سبک شود (<em>Panic Jettison</em>). وسایل ویژه فقط وقتی اثر دارند که واقعاً در کوله حمل شوند، نه وقتی در اردوگاه انبار شده‌اند.</p>
+</div>
+<div class="module-card">
+<h3>۲. استنتاج سه‌ثانیه‌ای و ریسک اردوگاه</h3>
+<p>هنگام نجات بازماندگان، بازیکن فقط چند ثانیه فرصت دارد از روی نشانه‌های ظاهری و رفتاری تصمیم بگیرد؛ چون هر نجات از دوام ابزار کم می‌کند و تصمیم اشتباه تا پایان مرحله روی اردوگاه اثر می‌گذارد، هر انتخاب یک قمار حساب‌شده است.</p>
+</div>
+<div class="module-card">
+<h3>۳. کارت‌های شات کارگردان و صدای درون‌داستانی (صدایی که منبعش داخل جهان بازی است)</h3>
+<p>برای هر صحنه از پیش مشخص است دوربین با چه زاویه‌ای می‌ایستد، شخصیت‌ها در کدام لایه‌ی تصویر قرار می‌گیرند، ریتم صحنه چیست و صدا کِی و چطور عوض می‌شود؛ پس اجرای پیکسل‌آرت دقیقاً طبق همان نقشه پیش می‌رود. زبان بصری بازی نوآر ۱۶بیتی است: ذغالی، استخوانی و زرشکی، با تنها یک نور گرمِ فانوس.</p>
+</div>
+<div class="module-card">
+<h3>۴. مدیریت دامنه، پیوستگی و امکان‌پذیری</h3>
+<p>همه‌ی نظام‌ها به هم وصل‌اند: وزن کوله روی استقامت اثر می‌گذارد، استقامت روی استفاده از ابزار، و ابزار روی اقتصاد اردوگاه. این اثرها با عدد مدل شده‌اند و از ابتدا مشخص است اگر تولید سخت شد، کدام قابلیت‌ها بدون آسیب به هسته‌ی بازی کنار گذاشته می‌شوند (<em>Scope Cut-lines</em>).</p>
+</div>
+</div>
+<div aria-label="Pre-production pipeline linking Director Shot Cards, Standard GDD, Systemic Coupling, and Scope and Engineering Justification for Godot 4 greyboxing" class="diagram-frame">
+<div class="fa-flow"><div class="fa-flow-card" style="border-color:var(--burgundy)"><div class="fa-flow-label" style="color:var(--burgundy)">کارگردانی</div><div class="fa-flow-title">کارت شات و لحن</div><div class="fa-flow-sub">نوآر ۴۵° · صدای درون‌داستانی</div></div><div class="fa-flow-card" style="border-color:var(--teal)"><div class="fa-flow-label" style="color:var(--teal)">مشخصات</div><div class="fa-flow-title">سند طراحی بازی</div><div class="fa-flow-sub">شبکه · ابزار · استنتاج</div></div><div class="fa-flow-card" style="border-color:var(--ochre)"><div class="fa-flow-label" style="color:var(--ochre)">مدل‌سازی</div><div class="fa-flow-title">پیوستگی نظام‌مند</div><div class="fa-flow-sub">وزن · یادگارها · ریسک اردوگاه</div></div><div class="fa-flow-card" style="border-color:var(--burgundy)"><div class="fa-flow-label" style="color:var(--burgundy)">مدیریت</div><div class="fa-flow-title">دامنه‌ی Godot 4</div><div class="fa-flow-sub">نمونه‌ی خاکستری دونفره</div></div></div>
+<div class="diagram-caption">شکل ۱ — مدیریت پیش‌تولید که صحنه‌آرایی خلاق، موازنه‌های نظام‌مند و دامنه‌ی واقع‌بینانه‌ی دونفره را به هم وصل می‌کند.</div>
+</div>
+</div>
+<div class="detail-section">
+<span class="step-num">۰۳ — سند کارگردانی بصری: صحنه‌ی ۰۱ («گیر»)</span>
+<h2>تبدیل کارت شات نوشتاری کارگردان به صحنه‌آرایی بصری</h2>
+<p>
+              برای آزمودن ارتباط میان‌رشته‌ای پیش از تولید دارایی‌ها، صحنه‌ی ۰۱ به‌صورت کارت شاتی ساخت‌یافته نوشته شد با ترکیب‌بندی دولایه و زاویه‌ی بالای ۴۵ درجه: خانه‌های تاریک دره در پایین، صخره‌ی سیلوئت دندانه‌دار در پیش‌زمینه، کلبه‌ی منزوی دزد روی تیغه با تنها پنجره‌ی طلایی گرم قاب در یک‌سوم راست، و زنجیر عظیم زنگ‌زده‌ی زره که از بالا-چپ وارد می‌شود، در حالی که صداهای محیطی شب به سکوتی ناگهانی می‌افتند.
+            </p>
+<div class="plates-grid" style="max-width:520px">
+<figure class="plate">
+<button class="plate-btn" data-caption="Project Lantern (working title) — Pre-production visual direction storyboard for Scene 01 ('The Snag'): 45° high-angle 16-bit noir palette testing contrast between the darkened valley, crimson dusk, rusted chain, and lone warm hearth window." type="button">
+<img alt="قاب مفهومی پیکسل‌آرت نوآر ۱۶بیتی برای صحنه‌ی ۰۱ Project Lantern: زنجیر عظیم زنگ‌زده‌ای که کلبه‌ی چوبی کوچکی با پنجره‌ی زرد درخشان را بالای تیغه‌ای سنگی بر فراز روستایی تاریک گیر انداخته است" loading="lazy" src="../assets/proof-lantern-storyboard.webp"/>
+</button>
+<figcaption>
+<span class="plate-id">تصویر ۰۱ · قاب مفهومی پیش‌تولید صحنه‌ی ۰۱</span>
+                  مطالعه‌ی استوری‌بورد نوآر ۱۶بیتی با زاویه‌ی بالای ۴۵ درجه برای <em>The Snag</em>، نشان‌دهنده‌ی سلسله‌مراتب پالت (ذغالی، آسمان زرشکی و کانون طلایی یگانه‌ی فانوس) که پیش از نمونه‌سازی خاکستری Godot 4 از روی کارت شات نوشتاری کارگردان ساخته شد.
+                </figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
+<nav aria-label="Case study navigation" class="wrap case-pager">
+<a class="pager-link" href="writing.html">
+<span>پرونده‌ی قبلی ←</span>
+<strong>۰۲ · کتاب‌ها، نقد و مطبوعات فرهنگی</strong>
+</a>
+<a class="pager-link" href="drm.html" style="text-align:right">
+<span>پرونده‌ی بعدی ←</span>
+<strong>۰۴ · DRM اختصاصی دوره و کتاب</strong>
+</a>
+</nav>
+</main>
+<footer class="site-footer">
+<div class="wrap footer-inner">
+<span>© ۲۰۲۶ شقایق مستعلی‌پور</span>
+<a href="mailto:sh.mastalipour@gmail.com">sh.mastalipour@gmail.com</a>
+</div>
+</footer>
+<div aria-label="Image preview" aria-modal="true" class="lightbox" hidden="" id="lightbox" role="dialog">
+<div class="lightbox-inner">
+<img alt="" id="lightbox-img" src=""/>
+<div class="lightbox-bar">
+<span id="lightbox-caption"></span>
+<button class="lightbox-close" id="lightbox-close" type="button">بستن [Esc]</button>
+</div>
+</div>
+</div>
+</body>
+</html>

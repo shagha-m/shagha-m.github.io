@@ -16,6 +16,7 @@
   </script>
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
+  <style>html[lang="fa"] body, html[lang="fa"] h1, html[lang="fa"] h2, html[lang="fa"] h3, html[lang="fa"] p, html[lang="fa"] li, html[lang="fa"] a, html[lang="fa"] button, html[lang="fa"] dd, html[lang="fa"] dt, html[lang="fa"] td, html[lang="fa"] th { font-family: 'Vazirmatn', Tahoma, system-ui, sans-serif !important; letter-spacing: 0 !important; }</style>
 </head>
 <body>
   <div class="ribbon" aria-hidden="true"><span></span><span></span><span></span></div>
@@ -36,6 +37,7 @@
         <a href="index.html#contact">Contact</a>
       </nav>
       <div class="header-controls">
+        <a class="lang-btn" href="fa/interactive.html" aria-label="نسخه‌ی فارسی">فارسی</a>
         <div class="theme-switch" role="group" aria-label="Color theme">
           <button class="theme-btn" type="button" data-set-theme="light" aria-pressed="true" aria-label="Light theme"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg></button>
           <button class="theme-btn" type="button" data-set-theme="dark" aria-pressed="false" aria-label="Dark theme"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
@@ -53,7 +55,7 @@
         <p class="eyebrow burgundy">Dossier 03 · Interactive Media Pre-Production &amp; Scope Governance</p>
         <h1><em>Project Lantern</em> (working title): governing mythic ambition through scope.</h1>
         <p class="case-hero-lead">
-          A two-person 2D indie game pre-production package targeting <strong>Godot Engine 4 (PC &amp; Steam Deck)</strong>—pairing a Promethean dark-fantasy premise and 16-bit noir visual direction with a standard GDD, Director’s Shot Cards, Mathematical Systemic Coupling, Engineering Justification, and Scope Management.
+          A two-person 2D indie game pre-production package targeting <strong>Godot Engine 4 (PC &amp; Steam Deck)</strong>—pairing a Promethean dark-fantasy premise and 16-bit noir visual direction with a standard GDD, Director’s Shot Cards, systemic coupling models, Engineering Justification, and Scope Management.
         </p>
 
         <dl class="spec-bar">
@@ -63,7 +65,7 @@
           </div>
           <div class="spec-item">
             <dt>Two-Person Team</dt>
-            <dd>Narrative, Systems &amp; Direction + Pixel Artist</dd>
+            <dd>Game Direction, Narrative &amp; Systems (me) + Pixel Art Execution (co-creator)</dd>
           </div>
           <div class="spec-item">
             <dt>Stage</dt>
@@ -86,7 +88,7 @@
             <li><a href="frankenstein-essay.html">Related: Promethean Essay →</a></li>
           </ul>
           <p class="aside-note">
-            <strong>IP &amp; attribution note:</strong> <em>Project Lantern</em> (also tracked internally as <em>Lantern Home</em>) is a working title for an original two-person production developed with my brother (pixel art direction). Narrative endings and full equations are withheld publicly and shared upon request with admissions committees.
+            <strong>IP &amp; attribution note:</strong> <em>Project Lantern</em> (also tracked internally as <em>Lantern Home</em>) is a working title for an original two-person production developed with my brother (he executes the pixel art; game direction is mine). Narrative endings and full equations are withheld publicly and shared upon request with admissions committees.
           </p>
         </aside>
 
@@ -95,11 +97,9 @@
             <span class="step-num">01 — Premise &amp; Structural Irony</span>
             <h2>A giant chasing the sun, a hut snagged on his chain</h2>
             <p>
-              A prideful War God descends to reclaim humanity’s primordial fire. Blinded by hubris, he assumes something so precious must be colossal—so he races eastward staring only at the horizon to seize the rising sun, crushing valley hearths into ash beneath his stride. High on a barren ridge sits a lowly thief’s wooden shack keeping the last undying ember; because the hilltop stands level with the giant’s rusted armor chains, a swinging link accidentally hooks the roof and tears the cottage loose like a dangling lantern.
+              A War God descends to take back the first fire of humankind. Out of pride, he assumes anything so valuable must be enormous, so he races east to seize the rising sun itself, crushing the valley homes beneath his stride. On a dry ridge, a thief's wooden hut guards the last remaining ember. The ridge stands level with the rusted chains of the giant's armour, and as he passes, one chain link catches on the roof and tears the hut loose — leaving it hanging from the chain, like a lantern.
             </p>
-            <p>
-              Gameplay unfolds as a symmetrical <strong>two-phase run</strong>: an upward <em>Ascent</em> through branching ruins (balancing resource gathering, tool durability, and survivor rescues) pivoting at the hanging cottage into a high-velocity downward <em>Retribution</em>, where earlier choices between solidarity and greed directly reshape which escape paths stand open.
-            </p>
+            <p>Gameplay centres on moving through ruined environments, gathering resources, managing tool durability, and deciding whom to rescue. Those decisions do not end in the moment — their consequences carry forward into the rest of the run.</p>
           </div>
 
           <div class="detail-section">
@@ -111,19 +111,19 @@
             <div class="module-grid">
               <div class="module-card">
                 <h3>1. Spatial Inventory &amp; Active Burden Rule</h3>
-                <p>An expandable 4×4 rotatable grid coupled directly to movement physics, chain-climbing thresholds, and emergency mouse-drag discard (<em>Panic Jettison</em>). Relics grant hazard resistance only while carried as live backpack weight—never from safe camp storage.</p>
+                <p>The player arranges items in a 4×4 grid; the heavier the pack, the harder movement and climbing become. In danger, an item can be dragged out and dropped with the mouse to shed weight instantly (<em>Panic Jettison</em>). Special items only work while actually carried in the pack — never from safe camp storage.</p>
               </div>
               <div class="module-card">
                 <h3>2. Three-Second Deduction &amp; Camp Risk</h3>
-                <p>Shattered prisons mix innocent villagers with disguised pickpockets and saboteurs. Players read subtle visual cues before spending crowbar durability to rescue; misjudgments carry lasting camp consequences, such as losing gear-repair support or stored gold.</p>
+                <p>When rescuing survivors, the player has only seconds to decide from visual and behavioural cues; every rescue spends tool durability, and a wrong call affects the camp for the rest of the run — so each rescue is a calculated gamble.</p>
               </div>
               <div class="module-card">
                 <h3>3. Director’s Shot Cards &amp; Diegetic Audio</h3>
-                <p>Standardized scene cards specify 45° high-angle camera framing, three-plane silhouette staging, frame-by-frame beat timing, a high-contrast 16-bit noir palette (charcoal, bone, crimson, and a single warm lantern glow), and diegetic sound shifts—giving writer and pixel artist a frictionless handoff.</p>
+                <p>Every scene is specified in advance — camera angle, which image layer each character occupies, the beat rhythm, and when and how the sound shifts — so pixel-art execution follows the same map exactly. The visual language is 16-bit noir: charcoal, bone and crimson, with a single warm lantern light.</p>
               </div>
               <div class="module-card">
                 <h3>4. Scope Management, Coupling &amp; Feasibility</h3>
-                <p>Companion documentation models quantitative systemic coupling across weight, stamina, tool wear, and camp economy, alongside engineering justification and scope cut-lines calibrated to a two-person Godot 4 production entering greybox prototyping.</p>
+                <p>All systems are coupled: pack weight affects stamina, stamina affects tool use, and tools affect the camp economy. These effects are modelled numerically, and it is decided in advance which features can be cut without harming the core game if production tightens (<em>Scope Cut-lines</em>).</p>
               </div>
             </div>
 
@@ -139,7 +139,7 @@
 
                   <rect x="204" y="18" width="166" height="90" rx="6" fill="none" stroke="var(--teal)" stroke-width="1.6"/>
                   <text x="218" y="42" font-size="10" font-family="monospace" fill="var(--teal)" font-weight="600">SPECIFICATION</text>
-                  <text x="218" y="64" font-size="13" fill="var(--ink)" font-weight="700">Two-Phase GDD</text>
+                  <text x="218" y="64" font-size="13" fill="var(--ink)" font-weight="700">GDD · Systems Design</text>
                   <text x="218" y="84" font-size="11" fill="var(--ink-muted)">Grid · Toolkit · Deduction</text>
 
                   <path d="M374 63 H392" stroke="var(--ochre)" stroke-width="1.6"/>

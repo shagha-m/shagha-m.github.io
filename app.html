@@ -16,6 +16,7 @@
   </script>
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
+  <style>html[lang="fa"] body, html[lang="fa"] h1, html[lang="fa"] h2, html[lang="fa"] h3, html[lang="fa"] p, html[lang="fa"] li, html[lang="fa"] a, html[lang="fa"] button, html[lang="fa"] dd, html[lang="fa"] dt, html[lang="fa"] td, html[lang="fa"] th { font-family: 'Vazirmatn', Tahoma, system-ui, sans-serif !important; letter-spacing: 0 !important; }</style>
 </head>
 <body>
   <div class="ribbon" aria-hidden="true"><span></span><span></span><span></span></div>
@@ -36,6 +37,7 @@
         <a href="index.html#contact">Contact</a>
       </nav>
       <div class="header-controls">
+        <a class="lang-btn" href="fa/app.html" aria-label="نسخه‌ی فارسی">فارسی</a>
         <div class="theme-switch" role="group" aria-label="Color theme">
           <button class="theme-btn" type="button" data-set-theme="light" aria-pressed="true" aria-label="Light theme"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg></button>
           <button class="theme-btn" type="button" data-set-theme="dark" aria-pressed="false" aria-label="Dark theme"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
@@ -158,7 +160,7 @@
                   <text x="448" y="182" font-size="10" fill="var(--burgundy)" font-weight="700" text-anchor="end">🛒 مشاهده و خرید</text>
                   <rect x="296" y="198" width="168" height="64" rx="8" fill="none" stroke="var(--teal)" stroke-width="1.4"/>
                   <text x="448" y="222" font-size="11" fill="var(--ink)" font-weight="700" text-anchor="end">کتاب داستان کره‌ای ۱</text>
-                  <text x="448" y="240" font-size="10" fill="var(--ink-muted)" text-anchor="end">✅ تو کتابخانه‌ته</text>
+                  <text x="448" y="240" font-size="10" fill="var(--ink-muted)" text-anchor="end">✅ در کتابخانه‌ی شما هست</text>
                   <text x="380" y="300" font-size="10" fill="var(--ink-muted)" text-anchor="middle">SHOP · فروشگاه</text>
                   <!-- Phone 3: Reader -->
                   <rect x="530" y="20" width="200" height="300" rx="18" fill="none" stroke="var(--burgundy)" stroke-width="2"/>
@@ -183,7 +185,7 @@
               The unified app was not a peacetime redesign. It was built during months of disruption in Iran — protests, periods of direct conflict, a ten-day total internet cutoff and roughly three months of severely restricted connectivity — during which, at times, we could not reach our own hosting and servers. Learners whose courses were already activated on their devices kept studying offline; learners whose access still required an online identity check were locked out until connectivity returned.
             </p>
             <p>
-              Two strategies followed immediately. First, <strong>bring every online service home</strong>: hosting moved to domestic Iranian servers, because international connectivity might be cut again — and because domestic traffic is cheaper and more fairly priced for the students and school learners who make up most of our audience. Second, <strong>make everything that can be offline, offline</strong>: a redesigned site was prepared from the first day of the cutoff so it could launch the moment the domestic intranet returned, and an in-site ticketing system replaced Telegram — until then our only channel to learners, and suddenly unreachable for us and for them — so existing students could at least reach us about their access.
+              Two strategies followed immediately. First, <strong>move every online service to domestic hosting</strong>: hosting moved to domestic Iranian servers, because international connectivity might be cut again — and because domestic traffic is cheaper and more fairly priced for the students and school learners who make up most of our audience. Second, <strong>make everything that can be offline, offline</strong>: a redesigned site was prepared from the first day of the cutoff so it could launch the moment the domestic intranet returned, and an in-site ticketing system replaced Telegram — until then our only channel to learners, and suddenly unreachable for us and for them — so existing students could at least reach us about their access.
             </p>
             <p>
               The unified app is the long-term answer to the same lesson. If search engines and websites can vanish overnight, the learner's courses must already live on their phone. The first release was therefore a protected course player only — blogs and in-app shopping came later; keeping purchased courses reachable came first.
@@ -194,7 +196,7 @@
             <span class="step-num">04 — Migration as a Trust Problem</span>
             <h2>Moving existing learners without breaking a single purchase</h2>
             <p>
-              The hardest release was invisible: migrating learners from the academy's legacy players to the unified app. My non-negotiable product requirements were that existing students must <strong>not</strong> lose access, must <strong>not</strong> have to file support tickets, and must <strong>not</strong> see their device treated as “unknown”. The shipped design therefore transfers each learner's existing entitlements to their new app automatically and atomically at first sign-in, with a full audit log — verified live with zero lost licenses, devices or purchases.
+              The hardest part of the work was the part learners were never meant to notice: migrating learners from the academy's legacy players to the unified app. My non-negotiable product requirements were that existing students must <strong>not</strong> lose access, must <strong>not</strong> have to file support tickets, and must <strong>not</strong> see their device treated as “unknown”. The shipped design therefore transfers each learner's existing entitlements to their new app automatically and in a single all-or-nothing step at first sign-in, with a full audit log — verified live with zero lost licenses, devices or purchases.
             </p>
             <p>
               Treating migration as an audience-trust exercise rather than a database exercise is, in miniature, the media-management question this portfolio pursues: how independent media ventures keep audiences, revenue and rights intact while their platforms change underneath them.
