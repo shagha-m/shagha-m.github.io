@@ -1798,10 +1798,32 @@ h1 em, h2 em, .serif-italic {
 
 /* RTL pages: Latin contact links read as one tidy LTR column */
 [dir="rtl"] .cv-sheet-meta {
-  direction: ltr;
+  direction: rtl;
   text-align: left;
   margin-right: auto;
   margin-left: 0;
+}
+[dir="rtl"] .cv-sheet-meta .meta-line {
+  display: block;
+}
+[dir="rtl"] .cv-sheet-meta .meta-line--en {
+  direction: ltr;
+  text-align: left;
+}
+[dir="rtl"] .cv-sheet-meta .meta-line a {
+  direction: ltr;
+  unicode-bidi: embed;
+}
+[dir="rtl"] .cv-sheet-meta .meta-line--mix {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.5rem 1.25rem;
+}
+[dir="rtl"] .cv-sheet-meta .meta-line--mix .mix-links {
+  direction: ltr;
+  text-align: left;
+  white-space: nowrap;
 }
 [dir="rtl"] .cv-sheet-meta .fa-loc {
   direction: rtl;
